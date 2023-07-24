@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\**" />
+      <Compile Remove="Models\FireStoreModel.cs" />
+      <Compile Remove="Pages\Account\**" />
+      <Compile Remove="Pages\GoogleSignIn.cshtml.cs" />
+      <Compile Remove="Pages\GoogleCallback.cshtml.cs" />
+      <Compile Remove="Pages\MicrosoftCallback.cshtml.cs" />
+      <Compile Remove="Pages\SignUp.cshtml.cs" />
+      <Compile Remove="Pages\SignUpSuccess.cshtml.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Controllers\**" />
+      <EmbeddedResource Remove="Pages\Account\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Controllers\**" />
+      <None Remove="Pages\Account\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Controllers\**" />
+      <Content Remove="Pages\Account\**" />
+      <Content Remove="Pages\GoogleSignIn.cshtml" />
+      <Content Remove="Pages\GoogleCallback.cshtml" />
+      <Content Remove="Pages\MicrosoftCallback.cshtml" />
+      <Content Remove="Pages\SignUp.cshtml" />
+      <Content Remove="Pages\SignUpSuccess.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.9" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="7.0.9" />
+      <PackageReference Include="MongoDB.Driver" Version="2.20.0" />
+    </ItemGroup>
+    
+</Project>

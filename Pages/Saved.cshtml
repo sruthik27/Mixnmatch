@@ -1,0 +1,50 @@
+﻿@page
+@model FirstWeb.Pages.saved
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Saved</title>
+    @{ ViewData["Title"] = "Saved"; }
+</head>
+<h6>Total favourites: @Model.CountValue</h6>
+<div class="container">
+    <h1 class="mt-5">Your favourite combinations are</h1>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered mt-4 table-responsive">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Combo number</th>
+                    <th>FG Color</th>
+                    <th>BG Color</th>
+                </tr>
+            </thead>
+            <tbody>
+            @{ var i = 1;}
+            @foreach (var combo in Model.AllColors)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td><span class="badge" style="background-color: @combo.FgColor; color: @ColorExtensions.GetTextColor(combo.FgColor)">@combo.FgColor</span></td>
+                    <td><span class="badge" style="background-color: @combo.BgColor; color: @ColorExtensions.GetTextColor(combo.BgColor)">@combo.BgColor</span></td>
+                </tr>
+                @{i++;}
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</html>
