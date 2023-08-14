@@ -1,64 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html>
+    <head>
+        <title>Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="mobile.css">
 
-<div class="container text-center mt-5">
-    <h1>Mix 'n Match</h1>
-    <p>Unleash Your Creativity with Captivating Color Combinations!</p>
-</div>
+        <style>
+            .preview-container {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+            .monitor-preview {
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .monitor-size {
+                width: 750px;
+            }
+            .monitor-content {
+                position: absolute;
+                background-color: rgb(14, 106, 210);
+                margin-left: 266px;
+                margin-right: 265px;
+                padding-top: 137px;
+                padding-bottom: 107px;
+            }
 
-<div class="container" id="top-container">
-    <form class="form-text row" id="color-form" method="post">
-        <div class="col-md-6">
-            <label for="color1" class="form-label">Foreground</label><br />
-            <input type="color" value="000000" id="color1" class="form-control form-control-color" asp-for="Combo.fg" oninput="setfgcolor()" /><br />
+            @media (max-width: 869px) {
+                .monitor-size {
+                    width: 650px;
+                }
+            }
+            
+            @media (max-width: 760px) {
+                .monitor-size {
+                    width: 600px;
+                }
+            }
+
+            @media (max-width: 560px) {
+                .monitor-size {
+                    width: 550px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="container-text">
+                <h1>Mix 'n Match</h1>
+            </div>
+            <div id="container-text">
+                Unleash Your Creativity with Captivating Color Combination!
+            </div>
+            <div class="preview-container">
+                <div>
+                    <div class="monitor-preview">
+                        <img class="monitor-size" src="monitor-preview.jpg">
+                        <div class="monitor-content">
+                            <div>
+                                <h1 class="para">Mountain:</h1>
+                                <p class="para">
+                                    A mountain is a large landform that rises prominently above its surroundings, typically characterized by steep slopes and a considerable elevation. These natural formations are created through geological processes, including tectonic plate movements and volcanic activity. Mountains can vary in size, shape, and appearance, ranging from majestic peaks with snow-capped summits to rugged ranges that stretch for miles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div></div>
         </div>
-        <div class="col-md-6">
-            <label for="color2" class="form-label">Background</label><br />
-            <input type="color" value="#ffffff" id="color2" class="form-control form-control-color" asp-for="Combo.bg" oninput="setbgcolor()" />
-        </div>
-    </form>
-
-    <div class="row">
-        <div class="col-md-6" id="contrast-container">
-            <p id="contrast-ratio">Contrast ratio: 21.0</p>
-            <p id="recommendation">Insight: Excellent</p>
-        </div>
-
-        <div class="col-md-6 ai-recommended">
-            <p id="ai-text" class="mb-0">AI Recommended:</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="card p-3 mb-3">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec justo in nunc rhoncus auctor gravida at
-            dolor. Proin accumsan suscipit lorem et porttitor. Morbi vel tincidunt dui. Aliquam lorem mauris, interdum
-            pulvinar laoreet sed, euismod eget quam. Mauris et nunc a libero viverra fermentum. Sed risus risus, tincidunt
-            sed ligula in, auctor sagittis ex. Ut sed scelerisque nisi. Etiam a lorem nibh. Proin ligula ligula, aliquam
-            a dui id, iaculis malesuada justo.
-        </p>
-    </div>
-</div>
-
-<div class="container">
-    <p id="fg-code" class="code-display">Foreground: #000000</p>
-    <img class="copy-icon" id="copier1" src="images/copy.svg" onclick="copyfg()" />
-    <span class="badge rounded-pill bg-success" id="sucesspop1" style="display: none">Copied!</span>
-    <br />
-    <p id="bg-code" class="code-display">Background: #FFFFFF</p>
-    <img class="copy-icon" id="copier2" src="images/copy.svg" onclick="copybg()" />
-    <span class="badge rounded-pill bg-success" id="sucesspop2" style="display: none">Copied!</span>
-    <br />
-    <button class="btn btn-primary mt-3" type="submit" form="color-form">Add this combo to collection</button>
-    <br />
-</div>
-</body>
+    </body>
 </html>
