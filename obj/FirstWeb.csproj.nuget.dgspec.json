@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sruth\\Desktop\\CSharp files\\FirstWeb\\FirstWeb\\FirstWeb.csproj": {}
+    "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\FirstWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sruth\\Desktop\\CSharp files\\FirstWeb\\FirstWeb\\FirstWeb.csproj": {
+    "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\FirstWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sruth\\Desktop\\CSharp files\\FirstWeb\\FirstWeb\\FirstWeb.csproj",
+        "projectUniqueName": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\FirstWeb.csproj",
         "projectName": "FirstWeb",
-        "projectPath": "C:\\Users\\sruth\\Desktop\\CSharp files\\FirstWeb\\FirstWeb\\FirstWeb.csproj",
+        "projectPath": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\FirstWeb.csproj",
         "packagesPath": "C:\\Users\\sruth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sruth\\Desktop\\CSharp files\\FirstWeb\\FirstWeb\\obj\\",
+        "outputPath": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sruth\\AppData\\Roaming\\NuGet\\NuGet.Config"
