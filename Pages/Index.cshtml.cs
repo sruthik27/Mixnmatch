@@ -47,6 +47,7 @@ public class IndexModel : PageModel
         }
         else
         {
+            TempData["ComboType"] = "Duo";
             TempData["ComboFg"] = Combo.fg;
             TempData["ComboBg"] = Combo.bg;
             return RedirectToPage("Authenticate");
@@ -54,20 +55,5 @@ public class IndexModel : PageModel
         
         
         return RedirectToPage("/Index");
-    }
-    public static class ColorExtensions
-    {
-        public static string GetTextColor(string bgColor)
-        {
-            // Calculate the perceived brightness of the background color
-            var rgb = bgColor.TrimStart('#');
-            var r = int.Parse(rgb.Substring(0, 2), System.Globalization.NumberStyles.HexNumber);
-            var g = int.Parse(rgb.Substring(2, 2), System.Globalization.NumberStyles.HexNumber);
-            var b = int.Parse(rgb.Substring(4, 2), System.Globalization.NumberStyles.HexNumber);
-            var perceivedBrightness = (r * 299 + g * 587 + b * 114) / 1000;
-
-            // Determine the appropriate text color (black or white)
-            return perceivedBrightness > 125 ? "#000000" : "#FFFFFF";
-        }
     }
 }

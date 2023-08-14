@@ -19,44 +19,44 @@ public class saved : PageModel
         _connectionString = configuration.GetConnectionString("MongoDBConnection");
         _mongoDbData = new MongoDbData(_connectionString);
     }
-    public List<MongoDbData.StoredCombo> AllColors { get; set; }
+    public List<MongoDbData.StoredCombo> AllDuos { get; set; }
+    public List<MongoDbData.StoredTriCombo> AllTrios { get; set; }
     
     public async Task OnGet()
     {
         if (!User.Identity.IsAuthenticated)
         {
-            // User is not authenticated. Add debugging code here to investigate further.
-            // For example, you can use Console.WriteLine or TempData to log messages.
+            // User is not authenticated
             TempData["Message"] = "User is not authenticated.";
             Console.WriteLine("User is not authenticated.");
         }
         else
         {
             Console.WriteLine("User authenticated");
-            string comboFg = TempData["ComboFg"] as string;
-            string comboBg = TempData["ComboBg"] as string;
-            if (comboFg != null && comboBg != null)
+            if (TempData["ComboType"] as string =="Duo")
             {
-                _mongoDbData.SaveCombo(User.Identity.Name, comboFg, comboBg);
+                string comboFg = TempData["ComboFg"] as string;
+                string comboBg = TempData["ComboBg"] as string;
+                if (comboFg != null && comboBg != null)
+                {
+                    _mongoDbData.SaveCombo(User.Identity.Name, comboFg, comboBg);
+                } 
             }
+            else
+            {
+                string comboBg = TempData["TriComboB"] as string;
+                string comboText = TempData["TriComboT"] as string;
+                string comboNav = TempData["TriComboN"] as string;
+                if (comboText != null && comboBg != null && comboNav != null)
+                {
+                    _mongoDbData.SaveTriCombo(User.Identity.Name, comboBg, comboText,comboNav);
+                } 
+            }
+            
+            
         }
-        CountValue = await _mongoDbData.GetComboCount(User.Identity.Name);
-        AllColors = await _mongoDbData.GetAllCombos(User.Identity.Name);
-    }
-}
-// Move the GetTextColor method outside
-public static class ColorExtensions
-{
-    public static string GetTextColor(string bgColor)
-    {
-        // Calculate the perceived brightness of the background color
-        var rgb = bgColor.TrimStart('#');
-        var r = int.Parse(rgb.Substring(0, 2), System.Globalization.NumberStyles.HexNumber);
-        var g = int.Parse(rgb.Substring(2, 2), System.Globalization.NumberStyles.HexNumber);
-        var b = int.Parse(rgb.Substring(4, 2), System.Globalization.NumberStyles.HexNumber);
-        var perceivedBrightness = (r * 299 + g * 587 + b * 114) / 1000;
-
-        // Determine the appropriate text color (black or white)
-        return perceivedBrightness > 125 ? "#000000" : "#FFFFFF";
+        CountValue = await _mongoDbData.GetCount(User.Identity.Name);
+        AllDuos = await _mongoDbData.GetAllCombos(User.Identity.Name);
+        AllTrios = await _mongoDbData.GetAllTriCombos(User.Identity.Name);
     }
 }
