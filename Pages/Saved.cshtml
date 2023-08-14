@@ -150,19 +150,39 @@
 <div class="heart"></div>
 <div class="container">
     <h1 class="title">My Collection of Captivating Color Combinations</h1>
-<div class="message-popup" id="messagePopup">
-    <span id="messageText"></span></div>
-    <div  class="grid-container">
-        @foreach (var combo in Model.AllColors)
+    <div class="message-popup" id="messagePopup">
+        <span id="messageText"></span>
+    </div>
+    <h2>Duo Collections (Websites)</h2>
+    <div class="grid-container">
+        @foreach (var combo in Model.AllDuos)
         {
             <div class="color-box">
-                            <div class="color" style="background-color: @combo.BgColor; color: @combo.FgColor">
-                                <span class="color-name">@combo.BgColor</span>
-                            </div>
-                            <div class="color" style="background-color: @combo.FgColor; color: @combo.BgColor">
-                                <span class="color-name">@combo.FgColor</span>
-                            </div>
-                        </div>
+                <div class="color" style="background-color: @combo.BgColor; color: @combo.FgColor">
+                    <span class="color-name">@combo.BgColor</span>
+                </div>
+                <div class="color" style="background-color: @combo.FgColor; color: @combo.BgColor">
+                    <span class="color-name">@combo.FgColor</span>
+                </div>
+            </div>
+        }
+    </div>
+    <br/>
+    <h2>Trio Collections (Mobile apps)</h2>
+    <div class="grid-container">
+        @foreach (var combo in Model.AllTrios)
+        {
+            <div class="color-box">
+                <div class="color" style="background-color: @combo.BgColor; color: @combo.TextColor">
+                    <span class="color-name">@combo.BgColor</span>
+                </div>
+                <div class="color" style="background-color: @combo.TextColor; color: @combo.BgColor">
+                    <span class="color-name">@combo.TextColor</span>
+                </div>
+                <div class="color" style="background-color: @combo.NaviColor; color: @combo.TextColor">
+                    <span class="color-name">@combo.NaviColor</span>
+                </div>
+            </div>
         }
     </div>
 </div>

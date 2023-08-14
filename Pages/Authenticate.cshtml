@@ -3,7 +3,32 @@
 @{
     ViewData["Title"] = "Login";
 }
-
+<head>
+    <style>
+        .container-text{
+        flex-direction: column;
+        align-items:center;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            align-self: center;
+            font-size: 20px;
+            background-image: linear-gradient(43deg, #4158D0 0%, #c850c0
+            46%, #FFCC70 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        .container-text h1{
+        font-weight: bold;
+        }
+    </style>
+</head>
+    <div class="container-text">
+                 <h1>Mix 'n Match</h1>
+    <h2>Unleash Your Creativity with Captivating Color Combination!</h2>
+    </div>
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-4">
@@ -11,18 +36,18 @@
             <form method="post">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username:</label>
-                    <input type="text" id="username" name="Username" class="form-control" required />
+                    <input type="text" id="username" name="Username" class="form-control" required/>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password:</label>
-                    <input type="password" id="password" name="Password" class="form-control" required />
+                    <input type="password" id="password" name="Password" class="form-control" required/>
                 </div>
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary btn-block">Login</button>
                 </div>
             </form>
 
-          
+
             <p class="text-center text-danger">@TempData["Message"]</p>
             <p class="text-center">New? <a asp-page="Register">Register</a></p>
         </div>
