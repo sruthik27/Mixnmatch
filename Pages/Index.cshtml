@@ -1,0 +1,64 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container text-center mt-5">
+    <h1>Mix 'n Match</h1>
+    <p>Unleash Your Creativity with Captivating Color Combinations!</p>
+</div>
+
+<div class="container" id="top-container">
+    <form class="form-text row" id="color-form" method="post">
+        <div class="col-md-6">
+            <label for="color1" class="form-label">Foreground</label><br />
+            <input type="color" value="000000" id="color1" class="form-control form-control-color" asp-for="Combo.fg" oninput="setfgcolor()" /><br />
+        </div>
+        <div class="col-md-6">
+            <label for="color2" class="form-label">Background</label><br />
+            <input type="color" value="#ffffff" id="color2" class="form-control form-control-color" asp-for="Combo.bg" oninput="setbgcolor()" />
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="col-md-6" id="contrast-container">
+            <p id="contrast-ratio">Contrast ratio: 21.0</p>
+            <p id="recommendation">Insight: Excellent</p>
+        </div>
+
+        <div class="col-md-6 ai-recommended">
+            <p id="ai-text" class="mb-0">AI Recommended:</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card p-3 mb-3">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec justo in nunc rhoncus auctor gravida at
+            dolor. Proin accumsan suscipit lorem et porttitor. Morbi vel tincidunt dui. Aliquam lorem mauris, interdum
+            pulvinar laoreet sed, euismod eget quam. Mauris et nunc a libero viverra fermentum. Sed risus risus, tincidunt
+            sed ligula in, auctor sagittis ex. Ut sed scelerisque nisi. Etiam a lorem nibh. Proin ligula ligula, aliquam
+            a dui id, iaculis malesuada justo.
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <p id="fg-code" class="code-display">Foreground: #000000</p>
+    <img class="copy-icon" id="copier1" src="images/copy.svg" onclick="copyfg()" />
+    <span class="badge rounded-pill bg-success" id="sucesspop1" style="display: none">Copied!</span>
+    <br />
+    <p id="bg-code" class="code-display">Background: #FFFFFF</p>
+    <img class="copy-icon" id="copier2" src="images/copy.svg" onclick="copybg()" />
+    <span class="badge rounded-pill bg-success" id="sucesspop2" style="display: none">Copied!</span>
+    <br />
+    <button class="btn btn-primary mt-3" type="submit" form="color-form">Add this combo to collection</button>
+    <br />
+</div>
+
+@section Scripts
+{
+    <script src="js/index.js" type="text/javascript"></script>
+}

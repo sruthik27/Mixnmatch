@@ -1,0 +1,199 @@
+﻿@page
+@model FirstWeb.Pages.saved
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saved</title>
+    @{ ViewData["Title"] = "Saved"; }
+    <style>
+        .color-card {
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        }
+
+        .color-preview {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .color-text {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        h6{
+        display: inline-block;
+        font-size: 1.5rem;
+        }
+        .heart {
+            margin-left: 5px;
+            margin-top: 10px;
+            width:25px;
+            background:
+             radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left,
+             radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right,
+             linear-gradient(to bottom left, red 43%,transparent 43%) bottom left ,
+             linear-gradient(to bottom right,red 43%,transparent 43%) bottom right;
+            background-size:50% 50%;
+            background-repeat:no-repeat;
+            display:inline-block;
+          }
+        .heart::before {
+            content:"";
+            display:block;
+            padding-top:100%;
+        }
+        .title {
+            font-size: 35px;
+            font-family: Roboto, arial;
+            display: flex;
+            justify-content: left;
+            flex-flow: wrap;
+            width: 80%;
+                margin-top: 40px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 25px;
+            font-weight: bolder;
+            background-image: linear-gradient(43deg, #4158D0 0%, #c850c0
+            46%, #FFCC70 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+            
+        }
+         .grid-container {
+                     display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                        gap: 20px;
+                        justify-content: center;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        max-width: 70%; /* Set the maximum width to limit to four boxes per row */
+                        margin: 0 auto; /* Center the grid on the page */
+                }
+        .color-box {
+                    width: 150px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                    border-radius: 15px; /* Add rounded corners to the box */
+                                overflow: hidden;
+                                box-shadow: 1px 0px 6px 7px rgba(0, 0, 0, 0.12);
+                }
+        
+                .color {
+                    flex: 1;
+                    height: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                       
+                }
+        
+                .color:hover {
+                    padding: 30px;
+                    transition: 0.15s;
+                    color: white;
+                    cursor: pointer;
+                }
+        
+                .color-name {
+                    font-family: Roboto, arial;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                .message-popup {
+                        position: fixed;
+                        bottom: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        padding: 10px 20px;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        color: white;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        display: none;
+                        z-index: 999;
+                    }
+                 @@media (max-width: 768px) {
+                            .grid-container {
+                                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                                gap: 15px;
+                            }
+                        }
+                
+                        @@media (max-width: 480px) {
+                            .grid-container {
+                                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                                gap: 10px;
+                            }
+                        }
+    </style>
+</head>
+
+<h6>Total favourites: @Model.CountValue</h6>
+<div class="heart"></div>
+<div class="container">
+    <h1 class="title">My Collection of Captivating Color Combinations</h1>
+<div class="message-popup" id="messagePopup">
+    <span id="messageText"></span></div>
+    <div  class="grid-container">
+        @foreach (var combo in Model.AllColors)
+        {
+            <div class="color-box">
+                            <div class="color" style="background-color: @combo.BgColor; color: @combo.FgColor">
+                                <span class="color-name">@combo.BgColor</span>
+                            </div>
+                            <div class="color" style="background-color: @combo.FgColor; color: @combo.BgColor">
+                                <span class="color-name">@combo.FgColor</span>
+                            </div>
+                        </div>
+        }
+    </div>
+</div>
+<script>
+       function copyToClipboard(hexCode) {
+               const textarea = document.createElement('textarea');
+               textarea.value = hexCode;
+               document.body.appendChild(textarea);
+               textarea.select();
+               document.execCommand('copy');
+               document.body.removeChild(textarea);
+               showCopyMessage(hexCode); // Show the popup message when copied
+           }
+       
+           function showCopyMessage(hexCode) {
+               const messagePopup = document.getElementById('messagePopup');
+               const messageText = document.getElementById('messageText');
+               messageText.textContent = `Copied: ${hexCode}`;
+               messagePopup.style.display = 'block';
+       
+               setTimeout(() => {
+                   messagePopup.style.display = 'none';
+               }, 2000); // Hide the message after 2 seconds (adjust the time as needed)
+           }
+       
+           const colorBoxes = document.querySelectorAll('.color');
+           colorBoxes.forEach(box => {
+               box.addEventListener('click', () => {
+                   const colorName = box.querySelector('.color-name').textContent.trim();
+                   copyToClipboard(colorName);
+               });
+           });
+    </script>
+</html>
