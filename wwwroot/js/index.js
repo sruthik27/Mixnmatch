@@ -78,3 +78,10 @@ aitext.addEventListener("click", function (event) {
         setbgcolor();
     }
 });
+
+function opencolor1(){
+    window.open(`https://www.color-hex.com/color/${fg.value.slice(1)}`)
+}
+function opencolor2(){
+    window.open(`https://www.color-hex.com/color/${bg.value.slice(1)}`)
+}
