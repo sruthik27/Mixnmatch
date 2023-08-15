@@ -6,75 +6,50 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" 
         rel="stylesheet">
-        <link rel="stylesheet" href="mobile.css">
 
-        <style>
-            .preview-container {
-                display: grid;
-                grid-template-rows: 1fr 1fr;
-            }
-            .monitor-preview {
-                margin-top: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .monitor-size {
-                width: 750px;
-            }
-            .monitor-content {
-                position: absolute;
-                background-color: rgb(14, 106, 210);
-                margin-left: 266px;
-                margin-right: 265px;
-                padding-top: 137px;
-                padding-bottom: 107px;
-            }
-
-            @media (max-width: 869px) {
-                .monitor-size {
-                    width: 650px;
-                }
-            }
-            
-            @media (max-width: 760px) {
-                .monitor-size {
-                    width: 600px;
-                }
-            }
-
-            @media (max-width: 560px) {
-                .monitor-size {
-                    width: 550px;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div class="container">
-            <div id="container-text">
-                <h1>Mix 'n Match</h1>
-            </div>
-            <div id="container-text">
-                Unleash Your Creativity with Captivating Color Combination!
-            </div>
             <div class="preview-container">
+                <img class="para-img" src="pic_para_mobile.jpeg">
                 <div>
-                    <div class="monitor-preview">
-                        <img class="monitor-size" src="monitor-preview.jpg">
-                        <div class="monitor-content">
-                            <div>
-                                <h1 class="para">Mountain:</h1>
-                                <p class="para">
-                                    A mountain is a large landform that rises prominently above its surroundings, typically characterized by steep slopes and a considerable elevation. These natural formations are created through geological processes, including tectonic plate movements and volcanic activity. Mountains can vary in size, shape, and appearance, ranging from majestic peaks with snow-capped summits to rugged ranges that stretch for miles.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    <h1 class="para">Mountain:</h1>
+                    <p class="para">
+                        A mountain is a large landform that rises prominently above its surroundings, typically characterized by steep slopes and a considerable elevation. These natural formations are created through geological processes, including tectonic plate movements and volcanic activity. Mountains can vary in size, shape, and appearance, ranging from majestic peaks with snow-capped summits to rugged ranges that stretch for miles.
+                    </p>
                 </div>
             </div>
-            <div></div>
+            <div class="input-container">
+                <div class="input-grid">
+                    <div>
+                        <div>
+                            <p>Foreground:</p>
+                            <input type="color">
+                        </div>
+                        <div>
+                            <p>Background:</p>
+                            <input type="color">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <p id="contrast-ratio" class="status-int">Contrast Ratio: 21.0 </p>
+                        <p id="recommendation" class="status-int">Insight: Excellent</p>
+                        <div>
+                            <button class="ai-recommended">
+                                <p id="ai-text">AI Recommended: #FFFFFF</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Foreground: #000000 <img class="copy-icon" src="copy.svg"></p>
+                    <p>Background: #FFFFFF <img class="copy-icon" src="copy.svg"></p>
+                    <button class="add-button">
+                        Add this combo to Collection
+                    </button>
+                </div>
+            </div>
         </div>
     </body>
 </html>
