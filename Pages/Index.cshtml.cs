@@ -9,7 +9,7 @@ public class IndexModel : PageModel
 {
     [BindProperty]
     public ComboModel Combo { get; set; }
-    
+
     private readonly string _connectionString; // Read the connection string from configuration or constants
     private readonly MongoDbData _mongoDbData;
     private readonly FirebaseData _FirebaseData = new();
