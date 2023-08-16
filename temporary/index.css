@@ -1,6 +1,8 @@
+div {
+    font-family: Roboto, arial, serif;
+}
 .container {
     width: 100%;
-    font-family: Roboto, arial, serif;
     display: grid;
 }
 .preview-container {
@@ -94,7 +96,7 @@
 @media (max-width: 710px) {
     .preview-container {
         border: 8px solid rgb(0, 0, 0);
-        margin: 0vw;
+        margin-top: 4vw;
         border-radius: 30px;
         opacity: 0.3;
     }

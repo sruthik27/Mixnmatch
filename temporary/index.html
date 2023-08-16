@@ -16,17 +16,18 @@
             Kabilan
         </header>
         <main>
+            <div class="input-grid">
+                <form class="form-text row" id="color-form" method="post">
+                    <label for="color1" class="form-label">Foreground: </label>
+                    <input class="input-col" type="color" value="000000" id="color1" class="form-control form-control-color" asp-for="Combo.fg" oninput="setfgcolor()" /><br />
+                </form>
+                <form class="form-text row" id="color-form" method="post">
+                    <label for="color2" class="form-label">Background: </label>
+                    <input class="input-col" type="color" value="#ffffff" id="color2" class="form-control form-control-color" asp-for="Combo.bg" oninput="setbgcolor()" />
+                </form>
+            </div>
             <div class="container">
-                <div class="input-grid">
-                    <form class="form-text row" id="color-form" method="post">
-                        <label for="color1" class="form-label">Foreground: </label>
-                        <input class="input-col" type="color" value="000000" id="color1" class="form-control form-control-color" asp-for="Combo.fg" oninput="setfgcolor()" /><br />
-                    </form>
-                    <form class="form-text row" id="color-form" method="post">
-                        <label for="color2" class="form-label">Background: </label>
-                        <input class="input-col" type="color" value="#ffffff" id="color2" class="form-control form-control-color" asp-for="Combo.bg" oninput="setbgcolor()" />
-                    </form>
-                </div>
+                
                 <div class="preview-container card">
                     <img class="para-img" src="pic_para_mobile.jpeg">
                     <div>
