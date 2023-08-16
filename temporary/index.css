@@ -27,8 +27,8 @@
 }
 .input-grid {
     margin: 0vw 20vw 0vw 20vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
 }
 .status {
     display: flex;
