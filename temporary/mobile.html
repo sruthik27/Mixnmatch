@@ -42,22 +42,16 @@
                     </div>
                 </div>
                 <div class="input-container">
-                    <div class="input-grid">
-                        <form class="form-text row" id="colortrio-form" method="post">
-                        <div class="ip-box">
-                            <p>Background</p>
-                            <input style="cursor: pointer;" type="color" value="#0e6ad2" id="color2" oninput="setbgcolor()" asp-for="TriCombo.bg">
+                    <form class="form-text row" id="color-form" method="post">
+                        <div class="input-col">
+                            <label for="color1" class="form-label">Foreground</label><br />
+                            <input type="color" value="000000" id="color1" class="form-control form-control-color" asp-for="Combo.fg" oninput="setfgcolor()" /><br />
                         </div>
-                        <div class="ip-box">
-                            <p>Text</p>
-                            <input style="cursor: pointer;" type="color" value="#ffffff" id="color3" oninput="settextcolor()" asp-for="TriCombo.text">
+                        <div class="col-md-6">
+                            <label for="color2" class="form-label">Background</label><br />
+                            <input type="color" value="#ffffff" id="color2" class="form-control form-control-color" asp-for="Combo.bg" oninput="setbgcolor()" />
                         </div>
-                        <div class="ip-box">
-                            <p>Navigation drawer</p>
-                            <input style="cursor: pointer;" type="color" value="#39AE2A" id="color1" oninput="setfgcolor()" asp-for="TriCombo.navigation">
-                        </div>
-                        </form>
-                    </div>
+                    </form>
                     <div class="status">
                         <p id="contrast-ratio" class="status-int">Contrast Ratio: 21.0 </p>
                         <p id="recommendation" class="status-int">Insight: Excellent</p>
