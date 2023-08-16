@@ -2,7 +2,6 @@
     width: 100%;
     font-family: Roboto, arial, serif;
     display: grid;
-
 }
 .preview-container {
     border: 8px solid rgb(0, 0, 0);
@@ -27,6 +26,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 45px;
+}
+.input-col {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .ai-recommended {
     padding: 15px;
