@@ -6,16 +6,25 @@
     <projectFile profileName="https">FirstWeb.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0edb90e5-2db9-4cde-b637-d12caad2c9b5" name="Changes" comment="trio selection,storing and display added">
+    <list default="true" id="0edb90e5-2db9-4cde-b637-d12caad2c9b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/wwwroot/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mixnmatch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mixnmatch.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstWeb.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FirstWeb.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Index.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/FirstWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/FirstWeb.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/FirstWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/FirstWeb.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/FirstWeb.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/FirstWeb.staticwebassets.runtime.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.publish.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.publish.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/FirstWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/FirstWeb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/FirstWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/FirstWeb.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.FirstWeb.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.FirstWeb.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temporary/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/temporary/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temporary/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/temporary/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/mobile.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +58,7 @@
 }</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.FirstWeb: IIS Express">
     <configuration name="Publish Mixnmatch to Azure" type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
-      <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/FirstWeb.csproj" />
+      <option name="AZURE_WEB_APP_PROJECT" value="" />
       <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="d5f0a4c5-d5bb-4dd6-bab1-8ce02636ee9c" />
       <option name="AZURE_WEB_APP_IS_CREATE_APP" value="0" />
       <option name="AZURE_WEB_APP_ID" value="/subscriptions/d5f0a4c5-d5bb-4dd6-bab1-8ce02636ee9c/resourceGroups/mixnmatch/providers/Microsoft.Web/sites/Mixnmatch" />
@@ -61,7 +70,7 @@
       <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/d5f0a4c5-d5bb-4dd6-bab1-8ce02636ee9c/resourceGroups/mixnmatch/providers/Microsoft.Web/serverfarms/ASP-mixnmatch-93b3" />
       <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="" />
       <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
-      <option name="AZURE_WEB_APP_PRICING_TIER" value="S1" />
+      <option name="AZURE_WEB_APP_PRICING_TIER" value="" />
       <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
       <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
       <option name="AZURE_WEB_APP_IS_DEPLOY_TO_SLOT" value="0" />
@@ -137,7 +146,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692018906863</updated>
-      <workItem from="1692018916533" duration="17163000" />
+      <workItem from="1692018916533" duration="17467000" />
+      <workItem from="1692165727327" duration="1487000" />
+      <workItem from="1692174690222" duration="718000" />
+      <workItem from="1692178889065" duration="3300000" />
+      <workItem from="1692203609253" duration="4587000" />
     </task>
     <task id="LOCAL-00001" summary="index content added">
       <created>1692020819137</created>
@@ -153,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692033702209</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="about color feature added">
+      <created>1692038320156</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692038320156</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +196,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="index content added" />
     <MESSAGE value="trio selection,storing and display added" />
-    <option name="LAST_COMMIT_MESSAGE" value="trio selection,storing and display added" />
+    <MESSAGE value="about color feature added" />
+    <option name="LAST_COMMIT_MESSAGE" value="about color feature added" />
   </component>
 </project>

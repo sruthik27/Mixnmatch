@@ -25,6 +25,7 @@
     <ItemGroup>
       <None Remove="Controllers\**" />
       <None Remove="Pages\Account\**" />
+      <None Include="wwwroot\css\index.css" />
     </ItemGroup>
 
     <ItemGroup>

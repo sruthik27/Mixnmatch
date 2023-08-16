@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\colorwheel.ico"
     },
     {
+      "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
       "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\css\\mobile.css",
       "PackagePath": "staticwebassets\\css\\mobile.css"
     },

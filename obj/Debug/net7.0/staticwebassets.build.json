@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WejwowpF1R6pYtIXmVYd6mWGDbAmd2HhiViMWnRkO5k=",
+  "Hash": "QmX4KlwfeaKYNqRsfqWzo10BXisPgXFhVCSFWlBKFRE=",
   "Source": "FirstWeb",
   "BasePath": "_content/FirstWeb",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\colorwheel.ico"
+    },
+    {
+      "Identity": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\css\\index.css",
+      "SourceId": "FirstWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\",
+      "BasePath": "_content/FirstWeb",
+      "RelativePath": "css/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
       "Identity": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\css\\mobile.css",
