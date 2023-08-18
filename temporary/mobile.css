@@ -1,31 +1,47 @@
 .container {
     width: 100%;
     font-family: Roboto, arial, serif;
-}
-.image-preview {
-    margin: 45px;
-}
-.img-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .img-size {
-    width: 25vw;
-    margin-left: 200px;
+    width: 350px;
+    margin: 50px 0 0 150px;
 }
 .mobile-content {
     position: absolute;
-    top: 5vw;
-    width: 24vw;
-    height: 106vh;
-    margin-left: 219px;
-    border-radius: 37px 37px 0 0;
+    top: 125px;
+    width: 305px;
+    height: 600px;
+    margin-left: 171px;
+    border-radius: 35px 35px 0 0;
     background-color: rgb(14, 106, 210);
 }
+.navigation-bar {
+    position: absolute;
+    top: 725px;
+    width: 305px;
+    height: 69px;
+    margin-left: 171px;
+    background-color: rgba(36, 165, 19, 0.9);
+    border-radius: 0 0 35px 35px;
+}
+.top-icons {
+    display: flex;
+    margin: 4px 0 0 6px;
+    font-size: 2ex;
+}
+.time {
+    margin: 0 90px 0 15px;
+}
+.camera {
+    margin-right: 50px;
+}
+.side {
+    margin-left: 10px;
+}
 .pic-para {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 10px;
+    margin: 26px 30px 0 30px;
     width: 249px;
     border-radius: 20px;
 }
@@ -34,71 +50,26 @@
     color: rgb(243, 243, 242);
     font-size: 16px;
 }
-.navigation-bar {
-    position: absolute;
-    top: 51vw;
-    width: 24vw;
-    height: 14vb;
-    margin-left: 219px;
-    background-color: rgba(36, 165, 19, 0.9);
-    border-radius: 0 0 37px 37px;
-}
 .icons {
-    margin-top: 15px;
-    margin-left: 25px;
-    margin-right: 15px;
+    margin: 15px 15px 0 25px;
     font-size: xx-large;
     color: rgb(0, 0, 0);
 }
-.top-icons {
-    display: flex;
-}
-#top-icons {
-    margin-top: 10px;
-    margin-left: 17px;
-    font-size: 2ex;
-}
 .input-container{
     width:100%;
-    display:grid;
+    display:flex;
     margin-top: 50px;
-    grid-template-columns: 200px 200px;
+    flex-direction: column;
+    font-size: 15px;
+}
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .ip-box{
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-    margin-bottom: 20px;
-}
-@media (max-width: 1000px) {
-    .input-container {
-        max-width: 750px;
-        grid-template-columns: 200px 200px;
-    }
-    .image-preview {
-        margin: 50px 0 0 0;
-    }
-    .copy-color {
-        margin-top: 50px; 
-    }
-    .img-size {
-        margin-left: 25px;
-    }
-    .mobile-content {
-        margin-left: 29px;
-        margin-left: 45px;
-        top: 72px;
-    }
-    .navigation-bar {
-        margin-left: 29px;
-        margin-left: 45px;
-        top: 669px;
-    }
-}
-.status {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    margin-left: 4vw;
 }
 .ai-recommended {
     padding: 15px;
@@ -121,18 +92,18 @@
 .status-int {
     margin-left: 0px;
 }
+.status {
+    display: flex;
+}
 .copy-color {
-    margin-bottom: 400px;
-    margin-left: 50px;
-    width: 100%;
+    margin: 4vw 0 0 4vw;
+    font-size: 15px;
 }
 .copy-para {
-    margin-right: 4px;
-    margin-bottom: 0px;
-    margin-top: 20px;
+    margin: 0 4px 20px 0;
 }
 .add-button {
-    margin-top: 20px;
+    margin-top: 5px;
     padding: 10px;
     border: none;
     background-color: #0d6efd;
@@ -154,36 +125,120 @@
     cursor: pointer;
     margin-left: 5px;
 }
-@media (max-width: 760px){
+@media (max-width: 930px) {
     .img-size {
-        width: 340px;
+        margin: 50px 0 0 100px;
+        width: 300px;
     }
-    .mobile-content {
-        top: 71px;
-        width: 297px;
-        height: 580px;
+    .mobile-content, .navigation-bar {
+        width: 261px;
+        height: 496px;
+        margin-left: 119px;
+        border-radius: 26px 26px 0 0;
     }
     .navigation-bar {
-        top: 650px;
-        height: 69px;
-        width: 297px;
+        top: 621px;
+        height: 74px;
+        border-radius: 0 0 26px 26px;
+    }
+    .top-icons {
+        font-size: 1.8ex;
+    }
+    .time {
+        margin-right: 72px;
+    }
+    .camera {
+        margin-right: 41px;
     }
     .pic-para {
-        width: 240px;
+        margin: 18px 0 0 18px;
+        width: 220px;
         border-radius: 15px;
     }
     .para {
-        margin: 16px 8px 0 16px;
-        font-size: 15px;
+        margin: 10px 10px 0 18px;
+        font-size: 14px;
     }
     .icons {
-        margin-left: 20px;
+        margin: 15px 15px 0 12px;
+        font-size: xx-large;
+    }
+}
+@media (max-width: 800px) {
+    .img-size {
+        margin: 25px 0 0 60px;
+    }
+    .mobile-content, .navigation-bar{
+        top: 100px;
+        width: 261px;
+        margin-left: 79px;
+    }
+    .navigation-bar {
+        top: 596px;
+        height: 75px;
+        border-radius: 0 0 26px 26px;
     }
     .input-container {
-        max-width: 750px;
-        grid-template-columns: 200px;
+        margin-top: 20px;
     }
-    .ai-recommended, .status-int {
-        margin-left: 35px;
+    .ai-recommended {
+        padding: 10px;
+        border-radius: 12px;
+    }
+}
+@media (max-width: 600px) {
+    .img-size {
+        margin: 10px 0 0 10px;
+        width: 250px;
+    }
+    .mobile-content, .navigation-bar{
+        top: 82px;
+        width: 218px;
+        margin-left: 25px;
+        height: 416px;
+        border-radius: 20px 20px 0 0;
+    }
+    .navigation-bar {
+        top: 498px;
+        height: 59px;
+        border-radius: 0 0 20px 20px;
+    }
+    .pic-para {
+        margin: 15px 0 0 25px;
+        width: 165px;
+        border-radius: 12px;
+    }
+    .para {
+        margin: 5px 5px 0 9px;
+        font-size: 12px;
+    }
+    .top-icons {
+        font-size: 1.6ex;
+    }
+    .time {
+        margin-right: 54px;
+    }
+    .icons {
+        margin: 15px 15px 0 12px;
+        font-size: x-large;
+    }
+    .input-container {
+        font-size: 14px;
+        display: block;
+    }
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+    .ai-recommended {
+        border-radius: 10px;
+        margin: 0 7px 0 4vw;
+        padding: 7px;
+        font-weight: 700;
+    }
+    .status-int {
+        margin-left: 4vw;
+    }
+    .copy-color {
+        font-size: 14px;
     }
 }
