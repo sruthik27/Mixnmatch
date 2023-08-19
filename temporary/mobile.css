@@ -9,8 +9,8 @@
     margin: 50px 0 0 150px;
 }
 .mobile-content {
-    position: absolute;
-    top: 125px;
+    position: relative;
+    top: -687px;
     width: 305px;
     height: 600px;
     margin-left: 171px;
@@ -18,8 +18,8 @@
     background-color: rgb(14, 106, 210);
 }
 .navigation-bar {
-    position: absolute;
-    top: 725px;
+    position: relative;
+    top: -688px;
     width: 305px;
     height: 69px;
     margin-left: 171px;
@@ -169,12 +169,12 @@
         margin: 25px 0 0 60px;
     }
     .mobile-content, .navigation-bar{
-        top: 100px;
+        top: -588px;
         width: 261px;
         margin-left: 79px;
     }
     .navigation-bar {
-        top: 596px;
+        top: -590px;
         height: 75px;
         border-radius: 0 0 26px 26px;
     }
@@ -192,15 +192,15 @@
         width: 250px;
     }
     .mobile-content, .navigation-bar{
-        top: 82px;
+        top: -493px;
         width: 218px;
         margin-left: 25px;
         height: 416px;
         border-radius: 20px 20px 0 0;
     }
     .navigation-bar {
-        top: 498px;
-        height: 59px;
+        top: -493px;
+        height: 60px;
         border-radius: 0 0 20px 20px;
     }
     .pic-para {
