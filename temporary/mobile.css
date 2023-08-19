@@ -131,13 +131,14 @@
         width: 300px;
     }
     .mobile-content, .navigation-bar {
+        top: -589px;
         width: 261px;
         height: 496px;
         margin-left: 119px;
         border-radius: 26px 26px 0 0;
     }
     .navigation-bar {
-        top: 621px;
+        top: -589px;
         height: 74px;
         border-radius: 0 0 26px 26px;
     }
