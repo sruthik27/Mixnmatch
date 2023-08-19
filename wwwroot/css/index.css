@@ -76,6 +76,7 @@
 .bg-success{
     height: 4vh;
 }
+
 @media (max-width: 840px) {
     .preview-container {
         border: 8px solid rgb(0, 0, 0);
