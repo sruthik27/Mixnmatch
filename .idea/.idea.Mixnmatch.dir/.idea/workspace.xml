@@ -7,17 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0edb90e5-2db9-4cde-b637-d12caad2c9b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Pages/HomePage.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/HomePage.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mixnmatch.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mixnmatch.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Mobile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Mobile.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/FirstWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/FirstWeb.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/FirstWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/FirstWeb.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/FirstWeb.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/FirstWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/FirstWeb.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/FirstWeb.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/FirstWeb.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.publish.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.publish.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temporary/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/temporary/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wwwroot/css/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/mobile.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +174,42 @@
       <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/d5f0a4c5-d5bb-4dd6-bab1-8ce02636ee9c/resourceGroups/mixnmatch/providers/Microsoft.Web/serverfarms/ASP-mixnmatch-93b3" />
       <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="" />
       <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
-      <option name="AZURE_WEB_APP_PRICING_TIER" value="S1" />
+      <option name="AZURE_WEB_APP_PRICING_TIER" value="" />
+      <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
+      <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
+      <option name="AZURE_WEB_APP_IS_DEPLOY_TO_SLOT" value="0" />
+      <option name="AZURE_WEB_APP_SLOT_NAME" value="" />
+      <option name="AZURE_WEB_APP_OPEN_BROWSER_PUBLISH" value="0" />
+      <option name="AZURE_SQL_DATABASE_SUBSCRIPTION_ID" value="d5f0a4c5-d5bb-4dd6-bab1-8ce02636ee9c" />
+      <option name="AZURE_SQL_DATABASE_IS_ENABLED" value="0" />
+      <option name="AZURE_SQL_DATABASE_CONNECTION_STRING_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE" value="0" />
+      <option name="AZURE_SQL_DATABASE_ID" value="" />
+      <option name="AZURE_SQL_DATABASE_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE_RESOURCE_GROUP" value="0" />
+      <option name="AZURE_SQL_DATABASE_RESOURCE_GROUP_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE_SQL_SERVER" value="0" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ID" value="" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ADMIN_LOGIN" value="N/A" />
+      <option name="AZURE_SQL_DATABASE_LOCATION" value="eastus" />
+      <option name="AZURE_SQL_DATABASE_COLLATION" value="SQL_Latin1_General_CP1_CI_AS" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish FirstWeb to Azure (5)" type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
+      <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/FirstWeb.csproj" />
+      <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="d5f0a4c5-d5bb-4dd6-bab1-8ce02636ee9c" />
+      <option name="AZURE_WEB_APP_IS_CREATE_APP" value="0" />
+      <option name="AZURE_WEB_APP_ID" value="/subscriptions/d5f0a4c5-d5bb-4dd6-bab1-8ce02636ee9c/resourceGroups/mixnmatch/providers/Microsoft.Web/sites/Mixnmatch" />
+      <option name="AZURE_WEB_APP_NAME" value="" />
+      <option name="AZURE_WEB_APP_IS_CREATE_RESOURCE_GROUP" value="0" />
+      <option name="AZURE_WEB_APP_RESOURCE_GROUP_NAME" value="" />
+      <option name="AZURE_WEB_APP_OPERATING_SYSTEM" value="WINDOWS" />
+      <option name="AZURE_WEB_APP_IS_CREATE_APP_SERVICE_PLAN" value="0" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/d5f0a4c5-d5bb-4dd6-bab1-8ce02636ee9c/resourceGroups/mixnmatch/providers/Microsoft.Web/serverfarms/ASP-mixnmatch-93b3" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="" />
+      <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
+      <option name="AZURE_WEB_APP_PRICING_TIER" value="" />
       <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
       <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
       <option name="AZURE_WEB_APP_IS_DEPLOY_TO_SLOT" value="0" />
@@ -321,7 +361,8 @@
       <workItem from="1692178889065" duration="3300000" />
       <workItem from="1692203609253" duration="5325000" />
       <workItem from="1692378592576" duration="2713000" />
-      <workItem from="1692386944965" duration="547000" />
+      <workItem from="1692386944965" duration="1374000" />
+      <workItem from="1692646227097" duration="2432000" />
     </task>
     <task id="LOCAL-00001" summary="index content added">
       <created>1692020819137</created>
@@ -351,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692209056795</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mobile page fixed">
+      <created>1692387583905</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692387583906</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,6 +424,7 @@
     <MESSAGE value="trio selection,storing and display added" />
     <MESSAGE value="about color feature added" />
     <MESSAGE value="index page finalized" />
-    <option name="LAST_COMMIT_MESSAGE" value="index page finalized" />
+    <MESSAGE value="mobile page fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="mobile page fixed" />
   </component>
 </project>
