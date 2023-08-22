@@ -1,6 +1,10 @@
+﻿@page "/"
+@model FirstWeb.Pages.HomePage
+
 <!DOCTYPE html>
+
 <html>
-    <head>
+<head>
         <title>Home</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,12 +59,12 @@
                 transition: 0.2s;
                 color: white;
             }
-            @media (max-width: 815px) {
+            @@media (max-width: 815px) {
                 .container-text {
                     font-size: 15px;
                 }
             }
-            @media (max-width: 625px) {
+            @@media (max-width: 625px) {
                 .container-text {
                     font-size: 12px;
                 }
@@ -68,11 +72,6 @@
         </style>
     </head>
     <body>
-        <header style="border: solid black;
-        margin: 20px;">
-            Kabilan
-        </header>
-        <main>
             <div class="container-text">
                 <h1>Mix 'n Match</h1>
                 <h2>Unleash Your Creativity with Captivating Color Combination!</h2>
@@ -84,10 +83,5 @@
                 <button class="button"><i class="fa fa-laptop" style="font-size: 50px;"></i></button>
                 <button class="button"><i class="fa fa-mobile-phone"  style="font-size: 50px;" ></i></button>
             </div>
-        </main>
-        <footer style="border: solid black;
-        margin: 20px;">
-            Vignesh
-        </footer>
     </body>
 </html>

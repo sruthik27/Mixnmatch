@@ -16,7 +16,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddMvc().AddRazorPagesOptions(options =>
 {
-    options.Conventions.AddPageRoute("/Index", "{*url}");
+    options.Conventions.AddPageRoute("/HomePage", "{*url}");
 });
 
 
