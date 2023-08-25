@@ -10,7 +10,7 @@ body {
 .mobile-content {
     position: relative;
     border: solid black;
-    border-width: 10px 10px 0px 10px;
+    border-width: 5px 5px 0px 5px;
     width: 305px;
     height: 600px;
     margin: 50px 0 0 171px;
@@ -21,7 +21,7 @@ body {
 .navigation-bar {
     position: relative;
     border: solid black;
-    border-width: 0px 10px 10px 10px;
+    border-width: 0px 5px 5px 5px;
     top: -10px;
     width: 305px;
     height: 69px;
