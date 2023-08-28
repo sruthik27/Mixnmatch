@@ -53,6 +53,9 @@ div {
     transition: 0.2s;
     color: white;
 }
+.slider {
+  margin: 0 3vw 0 3vw;
+}
 .slide-head {
   color: white;
   position: absolute;
