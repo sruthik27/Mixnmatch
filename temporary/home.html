@@ -8,6 +8,9 @@
         rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         
         <link rel="stylesheet" href="home.css">
     </head>
@@ -17,21 +20,70 @@
             Kabilan
         </header>
         <main>
-            <div class="Jarallax">
-                <img class="home-background-img" src="home_img.jpg">
-                <div id="home-intro">
-                    <div class="container-text">
-                        <h1>Mix 'n Match</h1>
-                        <h2>Unleash Your Creativity with Captivating Color Combination!</h2>
-                    </div>
-                    <div class="demo-table">
-                        <div class="demo-table-cell">
-                          <h1>Just Another Parallax <small>[Jarallax]</small></h1>
-                          <h2>Parallax with high performance</h2>
-                        </div>
+            <div class="home-background">
+                <div class="container-text">
+                    <h4>Welcome To</h4>
+                    <h1>Mix 'n Match</h1>
+                    <h2>Unleash Your Creativity with Captivating Color Combination!</h2>
+                    <div class="home-intro">
+                        Are you a designer in pursuit of the perfect color symphony for your projects? Your search ends here! Introducing Mixnmatch, the ultimate tool for effortlessly discovering and refining captivating color combinations that harmonize and comply. Whether you're shaping websites or mobile apps, our platform empowers you to craft captivating designs with simplicity.
                     </div>
                 </div>
             </div>
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-top: 0;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <h1 class="slide-head">Real-Time Exploration of Dynamic Color Palettes</h1>
+                    <p class="slide-con">With Mixnmatch, you hold the reins to blend and contrast a spectrum of foreground and background colors. Witness your designs spring to life in real time as you weave different combinations. Experience the enchantment as your choices interplay, unveiling the optimal blend that elevates your design's allure.</p>
+                    <img src="slide_1.jpg" alt="Los Angeles" style="width:100%;">
+                  </div>
+            
+                  <div class="item">
+                    <h1 class="slide-head">Design with Accessibility</h1>
+                    <p class="slide-con">Incorporating accessibility into design is paramount, and Mixnmatch has your back. Every color composition you conceive is meticulously evaluated using WCAG contrast ratios. This ensures that your creations don't just look appealing but also extend a warm invitation to all users. Bid adieu to uncertainty and embrace designs that embrace everyone.</p>
+                    <img src="slide_2.jpg" alt="Chicago" style="width:100%;">
+                  </div>
+                
+                  <div class="item">
+                    <h1 class="slide-head">AI-Enhanced Suggestions</h1>
+                    <p class="slide-con">Craving a dash of inspiration? Our AI-driven color recommendation engine is your creative confidante. Experience personalized suggestions that seamlessly meld with your existing palette, opening doors to fresh prospects you may have yet to fathom. Elevate your design prowess with AI's artistic insights.</p>  
+                    <img src="slide_3.jpg" alt="New york" style="width:100%;" >
+                  </div>
+                  <div class="item">
+                    <h1 class="slide-head" style="color: black;">Effortless Previews for Web and Mobile</h1>
+                    <p class="slide-con" style="color: black;">Design knows no boundaries. Whether your canvas is a webpage or a mobile app, Mixnmatch supports both arenas for fluid previewing. Behold your designs manifest in the context where they'll shine brightest.</p>
+                    <img src="slide_4.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+                  
+                    <div class="item">
+                      <h1 class="slide-head">Capture, Share, and Celebrate Your Creations</h1>
+                      <p class="slide-con">Design is a journey, and Mixnmatch is here to make it unforgettable. Register for an account to store and curate your preferred color combinations. Your dedicated dashboard ensures swift access to revisit and refine your works of art. Share your creations with peers, clients, and companions to foster collaborative design adventures.</p>
+                      <img src="slide-5.jpg" alt="New york" style="width:100%;">
+                    </div>
+                  </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                </div>
+                <br>
             <div class="button-div">
                 <button class="button"><i class="fa fa-laptop" style="font-size: 50px;"></i></button>
                 <button class="button"><i class="fa fa-mobile-phone"  style="font-size: 50px;" ></i></button>
@@ -42,12 +94,6 @@
             Vignesh
         </footer>
 
-        <script>
-            jarallax(document.querySelectorAll('.jarallax'), {
-                speed: 0.5,
-                imgWidth: 1366,
-                imgHeight: 768
-            });
-        </script>
+        
     </body>
 </html>

@@ -5,13 +5,10 @@ div {
     font-family: Roboto, Arial;
 }
 .container-text {
-    flex-direction: column;
+    position: relative;
     align-items:center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-self: center;
+    text-align: center;
+    vertical-align: middle;
     font-size: 20px;
     color: darkslategray;
 }
@@ -21,10 +18,21 @@ div {
 }
 .home-background-img {
     width: 100%;
+    height: 200vh;
 }
-#home-intro {
-    position: absolute;
-    top: 15vw;
+.home-background {
+    background-image: url('home_img.jpg');
+    background-repeat: no-repeat;
+    height: 45vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-intro {
+    margin: 10px 50px 1px 50px;
+    font-size: 10px;
 }
 .button-div {
     display: flex;
@@ -45,13 +53,57 @@ div {
     transition: 0.2s;
     color: white;
 }
+.slide-head {
+  color: white;
+  position: absolute;
+  margin: 8vw 0 0 5vw;
+  font-size: 33px;
+  font-weight: bold;
+}
+.slide-con {
+  color: white;
+  position: absolute;
+  margin: 15vw 10vw 0 9vw;
+  font-size: 27px;
+}
 @media (max-width: 815px) {
     .container-text {
         font-size: 15px;
+    }
+    .slide-head {
+      font-size: 25px;
+    }
+    .slide-con {
+      margin: 15vw 0 0 4vw;
+      font-size: 20px;
     }
 }
 @media (max-width: 625px) {
     .container-text {
         font-size: 12px;
     }
+    .slide-head {
+      font-size: 18px;
+    }
+    .slide-con {
+      margin: 15vw 0 0 7vw;
+      font-size: 12px;
+    }
 }
+@media (max-width: 500px) {
+  .container-text {
+    font-size: 10px;
+  }
+  .home-intro {
+    margin: 0;
+    font-size: 8px;
+  }
+  .slide-head {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
