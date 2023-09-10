@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\colorwheel.ico"
     },
     {
+      "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
       "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\css\\index.css",
       "PackagePath": "staticwebassets\\css\\index.css"
     },
@@ -25,12 +29,36 @@
       "PackagePath": "staticwebassets\\images\\copy.svg"
     },
     {
+      "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\images\\home_img.jpg",
+      "PackagePath": "staticwebassets\\images\\home_img.jpg"
+    },
+    {
       "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\images\\mobile-preview.jpg",
       "PackagePath": "staticwebassets\\images\\mobile-preview.jpg"
     },
     {
       "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\images\\pic_para_mobile.jpeg",
       "PackagePath": "staticwebassets\\images\\pic_para_mobile.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\images\\slide-5.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\images\\slide_1.jpg",
+      "PackagePath": "staticwebassets\\images\\slide_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\images\\slide_2.jpg",
+      "PackagePath": "staticwebassets\\images\\slide_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\images\\slide_3.jpg",
+      "PackagePath": "staticwebassets\\images\\slide_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\images\\slide_4.jpg",
+      "PackagePath": "staticwebassets\\images\\slide_4.jpg"
     },
     {
       "Id": "C:\\Users\\sruth\\Desktop\\Git_files\\Mixnmatch\\wwwroot\\js\\index.js",

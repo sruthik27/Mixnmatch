@@ -26,6 +26,12 @@
       <None Remove="Controllers\**" />
       <None Remove="Pages\Account\**" />
       <None Include="wwwroot\css\index.css" />
+      <None Include="wwwroot\images\home_img.jpg" />
+      <None Include="wwwroot\images\slide-5.jpg" />
+      <None Include="wwwroot\images\slide_1.jpg" />
+      <None Include="wwwroot\images\slide_2.jpg" />
+      <None Include="wwwroot\images\slide_3.jpg" />
+      <None Include="wwwroot\images\slide_4.jpg" />
     </ItemGroup>
 
     <ItemGroup>

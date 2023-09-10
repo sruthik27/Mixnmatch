@@ -1,0 +1,144 @@
+﻿body {
+    margin: 0;
+    background-image: url(../images/home_img.jpg);
+}
+.container{
+    padding: 0;
+}
+div {
+    font-family: Roboto, Arial;
+}
+.container-text {
+    position: relative;
+    align-items:center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    color: darkslategray;
+}
+.container-text h1 {
+    font-weight: bold;
+    margin: 0px;
+}
+.home-background-img {
+    width: 100%;
+    height: 200vh;
+}
+.home-background {
+    background-image: url('../images/home_img.jpg');
+    background-repeat: no-repeat;
+    height: 45vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-intro {
+    margin: 10px 50px 1px 50px;
+    font-size: 10px;
+}
+.login-button {
+    margin: 10px 0 0 0;
+    background-color: #2a52be;
+    color: white;
+    font-size: 13px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 15px;
+}
+.login-button:hover {
+    background-color: #0c2a7e;
+    transition: 0.15s;
+}
+.login-button:active {
+    transition: 0.1s;
+    opacity: 0.7;
+}
+.button-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+.button {
+    padding: 2vw 5vw 2vw 5vw;
+    border-radius: 1.5vw;
+    border: none;
+    background-color: #00BFFF;
+    font-size: 20px;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.button:active {
+    background: #2a52be;
+    transition: 0.2s;
+    color: white;
+}
+.slider {
+    margin: 0 3vw 0 3vw;
+}
+.slide-head {
+    color: white;
+    position: absolute;
+    margin: 8vw 0 0 5vw;
+    font-size: 33px;
+    font-weight: bold;
+}
+.slide-con {
+    color: white;
+    position: absolute;
+    margin: 15vw 10vw 0 9vw;
+    font-size: 27px;
+}
+.slide-img {
+    width:100%;
+    height: 100vh;
+}
+@media (max-width: 815px) {
+    .container-text {
+        font-size: 15px;
+    }
+    .slide-head {
+        font-size: 25px;
+    }
+    .slide-con {
+        margin: 15vw 0 0 4vw;
+        font-size: 20px;
+    }
+}
+@media (max-width: 625px) {
+    .container-text {
+        font-size: 12px;
+    }
+    .home-intro {
+        font-size: 8px;
+    }
+    .slide-head {
+        font-size: 18px;
+    }
+    .slide-con {
+        margin: 15vw 0 0 7vw;
+        font-size: 12px;
+    }
+    .login-button {
+        margin: 2px 0 0 0;
+        padding: 2px 5px 2px 5px;
+        font-size: 8px;
+    }
+}
+@media (max-width: 500px) {
+    .container-text {
+        font-size: 10px;
+    }
+    .home-intro {
+        margin: 0;
+        font-size: 8px;
+    }
+    .slide-head {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
