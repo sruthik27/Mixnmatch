@@ -1,30 +1,35 @@
+body {
+    margin: 0px;
+}
 .container1 {
     width: 100%;
     font-family: Roboto, arial, serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.img-size {
-    width: 350px;
-    margin: 50px 0 0 150px;
-}
 .mobile-content {
     position: relative;
-    top: -687px;
+    border: solid black;
+    border-width: 5px 5px 0px 5px;
     width: 305px;
     height: 600px;
-    margin-left: 171px;
+    margin: 50px 0 0 171px;
     border-radius: 35px 35px 0 0;
     background-color: rgb(14, 106, 210);
+    box-shadow: 1px 1px 10px 0px;
 }
 .navigation-bar {
+    display: flex;
     position: relative;
-    top: -688px;
+    border: solid black;
+    border-width: 0px 5px 5px 5px;
+    top: -10px;
     width: 305px;
     height: 69px;
-    margin-left: 171px;
+    margin: 0 0 0 171px;
     background-color: rgba(36, 165, 19, 0.9);
     border-radius: 0 0 35px 35px;
+    box-shadow: 1px 5px 10px 0px;
 }
 .top-icons {
     display: flex;
@@ -54,9 +59,6 @@
     margin: 15px 15px 0 25px;
     font-size: xx-large;
     color: rgb(0, 0, 0);
-}
-.image-preview{
-    height: 130vh;
 }
 .input-container{
     width:100%;
@@ -128,20 +130,20 @@
     cursor: pointer;
     margin-left: 5px;
 }
+.bg-success{
+    height: 4vh;
+}
 @media (max-width: 930px) {
-    .img-size {
-        margin: 50px 0 0 100px;
-        width: 300px;
-    }
+
     .mobile-content, .navigation-bar {
-        top: -589px;
+
         width: 261px;
         height: 496px;
-        margin-left: 119px;
+        margin: 62px 0 0 119px;
         border-radius: 26px 26px 0 0;
     }
     .navigation-bar {
-        top: -589px;
+        margin: 0 0 0 119px;
         height: 74px;
         border-radius: 0 0 26px 26px;
     }
@@ -169,18 +171,16 @@
     }
 }
 @media (max-width: 800px) {
-    .img-size {
-        margin: 25px 0 0 60px;
-    }
+
     .mobile-content, .navigation-bar{
-        top: -588px;
         width: 261px;
-        margin-left: 79px;
+        margin: 38px 0 0 79px;
     }
     .navigation-bar {
-        top: -590px;
+
         height: 75px;
         border-radius: 0 0 26px 26px;
+        margin-top: 0px;
     }
     .input-container {
         margin-top: 20px;
@@ -191,19 +191,14 @@
     }
 }
 @media (max-width: 600px) {
-    .img-size {
-        margin: 10px 0 0 10px;
-        width: 250px;
-    }
     .mobile-content, .navigation-bar{
-        top: -493px;
+
         width: 218px;
         margin-left: 25px;
         height: 416px;
         border-radius: 20px 20px 0 0;
     }
     .navigation-bar {
-        top: -493px;
         height: 60px;
         border-radius: 0 0 20px 20px;
     }
