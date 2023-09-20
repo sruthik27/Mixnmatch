@@ -14,10 +14,20 @@ builder.Services.AddAuthentication(options =>
     })
     .AddCookie(options => options.LoginPath = "/Authenticate");
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAnyOrigin", builder =>
+    {
+        builder.AllowAnyOrigin() // Allow requests from any origin
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 builder.Services.AddMvc().AddRazorPagesOptions(options =>
 {
     options.Conventions.AddPageRoute("/HomePage", "{*url}");
 });
+
 
 
 var app = builder.Build();
